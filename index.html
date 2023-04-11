@@ -15,6 +15,7 @@
       font-size: 20px;
       text-align: left;
       padding: 1em 2em 1em;
+      line-height: 1.5;
     }
   </style>
   
@@ -33,6 +34,7 @@
       increased voting.
       
       <br> 
+      <br>
       
       This plot also shows income level of these voters. Most college graduates earn higher salaries than those who 
       did not graduate college or continue with their education after high school. People who have a high school degree or less tend to earn 
@@ -46,6 +48,32 @@
     <iframe id="categories" scrolling="no" style="border:none;" seamless="seamless" 
             src="categories_parallel.html" height="525" width="100%">
     </iframe>
+    
+    <br>
+    <br>
+    
+    <p class="basic"> The second plot I created was a bubble/scatter plot. THis plot has, on the x-axis, the percent of (in person) voter turnout in 
+      elections from 2014-2022, and the y-axis shows the percent of absentee votes in those elections as well. Each point represents a county
+    in Virginia, and the size of the bubble represents the total number of registered voters in that county. This plot is interactive as well,
+    and viewers can scroll back and forth between the years to see the differences between them. 
+    
+    <br>
+    <br>
+      
+    Something to note about this specific data is that there were some percentages that were calculated that were reaching infinity due
+      to lack of data, and others that were greater than 100%. The rows containing the infinite datapoints were removed from this model. 
+      The values that were greater than 100% were not shown in the graph, but they are real data that were collected, so I did not remove them
+      from the dataframe. 
+      
+      <br>
+      <br>
+      
+      With that said, this plot is very interesting. Most of the data from 2014-2018 remained at the same level, but in 2020 there was a huge jump in 
+      absentee voting. There was also an increase in in person voter turnout, but this could have been due to the fact that it was a presidential
+      election year (2016 also had an increase in person voter turnout). The rise in absentee voting in 2020 could have been because of the COVID-19 virus, 
+      which forced many people to stay home from the polls and vote through absentee ballot. Additionally, it was an election of historic proportions
+      between Donald Trump and Joe Biden, with increased movements to try and get people to vote, either through in person or absentee voting. 
+    </p>
     
     <iframe id="bubble" scrolling="no" style="border:none;" seamless="seamless" 
             src="bubble.html" height="725" width="100%">
